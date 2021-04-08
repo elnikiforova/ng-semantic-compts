@@ -2,7 +2,8 @@ import { Component, OnInit, ElementRef, OnDestroy, Output, EventEmitter } from '
 
 @Component({
   selector: 'app-modal',
-  templateUrl: './modal.component.html'
+  templateUrl: './modal.component.html',
+  styleUrls: ['./modal.component.css']
 })
 export class ModalComponent implements OnInit, OnDestroy {
   @Output() close = new EventEmitter();
